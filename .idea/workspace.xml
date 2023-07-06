@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f2a65d-b041-4d08-9ed0-7857f4d764a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConversorCoins.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterCoins/Coins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterCoins/ConverterCoins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterCoins/ConverterCoinsAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterTemperature/ConverterTemperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/Panel/Panel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/converter.java" afterDir="false" />
+    <list default="true" id="87f2a65d-b041-4d08-9ed0-7857f4d764a6" name="Changes" comment="SecondCommit">
+      <change afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/Teste.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterCoins/ConverterCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterCoins/ConverterCoins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterTemperature/ConverterTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/ConverterTemperature/ConverterTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/ConverterAlura/Panel/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/Panel/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/ConverterAlura/converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/ConverterAlura/Converter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,27 +35,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;324&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/leo_a/Downloads/gson-2.8.8.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "324",
+    "last_opened_file_path": "C:/Users/leo_a/Downloads/gson-2.8.8.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Converter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ConverterAlura.Converter" />
@@ -91,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1688068828603</updated>
     </task>
+    <task id="LOCAL-00001" summary="FirstCommit">
+      <created>1688586792161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688586792161</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +112,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FirstCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FirstCommit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ConversorCoins$panelStand.ic" NAME="panelStand Coverage Results" MODIFIED="1688406429607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

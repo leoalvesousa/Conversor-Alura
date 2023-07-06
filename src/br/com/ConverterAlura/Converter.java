@@ -4,8 +4,9 @@ import br.com.ConverterAlura.ConverterCoins.ConverterCoins;
 import br.com.ConverterAlura.ConverterTemperature.ConverterTemperature;
 import br.com.ConverterAlura.Panel.Panel;
 
-public class converter {
+public class Converter {
     public static void main(String[] args) {
+
         int panel = Panel.panelComboConverter();
 
         if (panel == 0) {

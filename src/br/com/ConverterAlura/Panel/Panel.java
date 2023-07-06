@@ -1,5 +1,7 @@
 package br.com.ConverterAlura.Panel;
 
+import br.com.ConverterAlura.Converter;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -7,7 +9,7 @@ public class Panel {
     public static int panelComboConverter() {
         JPanel panel = new JPanel();
         JLabel label = new JLabel("Escolha uma opção");
-        String[] options = {"Converter Moeda","Converter Temperatura"};
+        String[] options = {"Converter Moeda", "Converter Temperatura"};
 
         JComboBox<String> comboBoxConverter = new JComboBox<>(options);
 
@@ -19,12 +21,26 @@ public class Panel {
         label.setPreferredSize(new Dimension(150, 15));
         comboBoxConverter.setPreferredSize(new Dimension(200, 30));
 
-        JOptionPane.showOptionDialog(null, panel,
+        int result = JOptionPane.showOptionDialog(null, panel,
                 "Menu", JOptionPane.CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE,
                 null, null, null);
 
+        if (result == JOptionPane.CANCEL_OPTION) {
+            JOptionPane.showMessageDialog(null, "Programa Finalizado");
+            System.exit(0);
+        }
+
         return comboBoxConverter.getSelectedIndex();
 
+    }
+
+    public static String panelInput() {
+        String input = JOptionPane.showInputDialog(null, "Insira um valor:");
+        if (input == null) {
+            JOptionPane.showMessageDialog(null, "Programa Finalizado");
+            System.exit(0);
+        }
+        return input;
     }
 
     public static int panelComboCoins() {
@@ -51,23 +67,30 @@ public class Panel {
         label.setPreferredSize(new Dimension(150, 15));
         comboBox.setPreferredSize(new Dimension(200, 30));
 
-        JOptionPane.showOptionDialog(null, panel,
+        int result = JOptionPane.showOptionDialog(null, panel,
                 "Menu", JOptionPane.CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE,
                 null, null, null);
+
+        if (result == JOptionPane.CANCEL_OPTION) {
+            JOptionPane.showMessageDialog(null, "Programa Finalizado");
+            System.exit(0);
+
+        }
 
         return comboBox.getSelectedIndex();
     }
 
-    public static int panelComboTemperature(){
+    public static int panelComboTemperature() {
         JPanel panel = new JPanel();
         JLabel label = new JLabel("Escolha qual temperatura você quer converter");
         String[] options = {"De Celsius para Fahrenheit",
-                            "De Celsius para Kelvin",
-                            "De Fahrenheit para Celsius",
-                            "De Fahrenheit para Kelvin",
-                            "De Kelvin para Celsius",
-                            "De Kelvin para Fahrenheit "
+                "De Celsius para Kelvin",
+                "De Fahrenheit para Celsius",
+                "De Fahrenheit para Kelvin",
+                "De Kelvin para Celsius",
+                "De Kelvin para Fahrenheit "
         };
+
         JComboBox<String> comboBoxTemperature = new JComboBox<>(options);
 
         panel.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -78,11 +101,18 @@ public class Panel {
         label.setPreferredSize(new Dimension(150, 15));
         comboBoxTemperature.setPreferredSize(new Dimension(200, 30));
 
-        JOptionPane.showOptionDialog(null, panel,
+        int result = JOptionPane.showOptionDialog(null, panel,
                 "Menu", JOptionPane.CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE,
                 null, null, null);
 
+        if (result == JOptionPane.CANCEL_OPTION) {
+            JOptionPane.showMessageDialog(null, "Programa Finalizado");
+            System.exit(0);
+
+        }
+
         return comboBoxTemperature.getSelectedIndex();
+
     }
 
     public static void showResultPanel(double result) {
@@ -93,5 +123,22 @@ public class Panel {
         panel.add(label);
 
         JOptionPane.showMessageDialog(null, panel, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+
     }
+
+    public static void panelAdvance() {
+
+        int choice = JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Continuar", JOptionPane.YES_NO_CANCEL_OPTION);
+        if (choice == JOptionPane.YES_OPTION) {
+            Converter.main(new String[0]);
+        } else if (choice == JOptionPane.NO_OPTION) {
+            JOptionPane.showMessageDialog(null, "Programa Finalizado");
+            System.exit(0);
+        } else if (choice == JOptionPane.CANCEL_OPTION) {
+            JOptionPane.showMessageDialog(null, "Programa Concluído");
+            System.exit(0);
+        }
+    }
+
+
 }
